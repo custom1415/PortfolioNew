@@ -1,0 +1,9 @@
+[
+  {
+    "project": "GymBro",
+    "description": "A workout website that helps you create and organize your workouts and save them into your local storage using redux-persist. ",
+    "image": "/gymbro.png",
+    "icons": ["react", "redux", "tailwind"],
+    "url": "https://gymbroo.netlify.app/"
+  }
+]
