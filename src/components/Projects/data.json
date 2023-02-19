@@ -5,7 +5,7 @@
     "image": "/gymbro.png",
     "icons": ["react", "redux", "tailwind"],
     "url": "https://gymbroo.netlify.app/",
-    "img":"https://img.freepik.com/premium-photo/gym-dumbbells-yellow-background_103577-5472.jpg"
+    "img": "https://img.freepik.com/premium-photo/gym-dumbbells-yellow-background_103577-5472.jpg"
   },
   {
     "project": "Drag-n'-Drop",
@@ -13,6 +13,14 @@
     "image": "/gymbro.png",
     "icons": ["nextjs", "redux", "tailwind", "next-auth"],
     "url": "https://lance-me-up.vercel.app/",
-    "img":"/Project.png"
+    "img": "/Project.png"
+  },
+  {
+    "project": "Code-Blog",
+    "description": "A Code Blog made with Sanity-v3",
+    "image": "/gymbro.png",
+    "icons": ["nextjs", "sanity", "tailwind"],
+    "url": "https://lance-me-up.vercel.app/",
+    "img": "/sanity-blog.png"
   }
 ]

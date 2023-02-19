@@ -7,11 +7,17 @@ import {
   SiTailwindcss,
   SiReact,
   SiRedux,
-  SiGithub,
   SiNextdotjs,
 } from "react-icons/si";
 
-export const ProjectCard = ({ id, icons, description, project, url,imgurl}) => {
+export const ProjectCard = ({
+  id,
+  icons,
+  description,
+  project,
+  url,
+  imgurl,
+}) => {
   const [currentHoveredId, setCurrentHoveredId] = useState(null);
   const [previousHoveredId, setPreviousHoveredId] = useState(null);
   const [nextHoveredId, setNextHoveredId] = useState(null);
@@ -24,6 +30,12 @@ export const ProjectCard = ({ id, icons, description, project, url,imgurl}) => {
     mongodb: <SiMongodb className="text-[#00ed64] text-3xl" />,
     express: <SiExpress className="text-3xl text-gray-100" />,
     nextjs: <SiNextdotjs className="text-3xl invert" />,
+    sanity: (
+      <img
+        src="https://www.sanity.io/static/images/logo_rounded_square.png"
+        className="w-8 h-8"
+      />
+    ),
     "next-auth": (
       <img
         src="https://next-auth.js.org/img/logo/logo-sm.png "
@@ -98,10 +110,19 @@ export const ProjectCard = ({ id, icons, description, project, url,imgurl}) => {
         </div>
         <p className="md:max-w-xl md:my-0 my-8  text-gray-400">{description}</p>
 
-        <div className="flex w-auto gap-4 mb-8 overflow-auto">
+        <div className="flex w-max gap-4 mb-8">
           {icons.map((icon, i) => {
             if (iconsOBj.hasOwnProperty(icon))
-              return <Fragment key={i}>{iconsOBj[icon]}</Fragment>;
+              return (
+                <Fragment key={i}>
+                  <div className="relative group cursor-pointer">
+                    <span title={icon}>{iconsOBj[icon]}</span>
+                    <div className="opacity-0 whitespace-nowrap group-hover:opacity-100 absolute -top-10 left-0 text-sm bg-gray-800 p-2 text-white capitalize">
+                      {icon}
+                    </div>
+                  </div>
+                </Fragment>
+              );
           })}
         </div>
         <div className="flex items-center justify-center h-max">
