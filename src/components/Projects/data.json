@@ -20,7 +20,7 @@
     "description": "A Code Blog made with Sanity-v3",
     "image": "/gymbro.png",
     "icons": ["nextjs", "sanity", "tailwind"],
-    "url": "https://lance-me-up.vercel.app/",
+    "url": "https://sanity-v3-blog-tau.vercel.app/",
     "img": "/sanity-blog.png"
   }
 ]
