@@ -20,6 +20,7 @@ export const Project = React.forwardRef((props, ref) => {
               description={data.description}
               project={data.project}
               url={data.url}
+              imgurl={data.img}
             />
           );
         })}

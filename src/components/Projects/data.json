@@ -4,6 +4,15 @@
     "description": "A workout website that helps you create and organize your workouts and save them into your local storage using redux-persist. ",
     "image": "/gymbro.png",
     "icons": ["react", "redux", "tailwind"],
-    "url": "https://gymbroo.netlify.app/"
+    "url": "https://gymbroo.netlify.app/",
+    "img":"https://img.freepik.com/premium-photo/gym-dumbbells-yellow-background_103577-5472.jpg"
+  },
+  {
+    "project": "Drag-n'-Drop",
+    "description": "A Trello like web app with route protection.",
+    "image": "/gymbro.png",
+    "icons": ["nextjs", "redux", "tailwind", "next-auth"],
+    "url": "https://lance-me-up.vercel.app/",
+    "img":"/Project.png"
   }
 ]

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useState } from "react";
 import {
   SiMongodb,
   SiNodedotjs,
@@ -7,12 +7,11 @@ import {
   SiTailwindcss,
   SiReact,
   SiRedux,
-  SiJsonwebtokens,
-  SiTypescript,
   SiGithub,
+  SiNextdotjs,
 } from "react-icons/si";
 
-export const ProjectCard = ({ id, icons, description, project, url }) => {
+export const ProjectCard = ({ id, icons, description, project, url,imgurl}) => {
   const [currentHoveredId, setCurrentHoveredId] = useState(null);
   const [previousHoveredId, setPreviousHoveredId] = useState(null);
   const [nextHoveredId, setNextHoveredId] = useState(null);
@@ -24,6 +23,13 @@ export const ProjectCard = ({ id, icons, description, project, url }) => {
     nodejs: <SiNodedotjs className="text-[#339933] text-3xl" />,
     mongodb: <SiMongodb className="text-[#00ed64] text-3xl" />,
     express: <SiExpress className="text-3xl text-gray-100" />,
+    nextjs: <SiNextdotjs className="text-3xl invert" />,
+    "next-auth": (
+      <img
+        src="https://next-auth.js.org/img/logo/logo-sm.png "
+        className="w-8 h-8"
+      />
+    ),
     jwt: (
       <object
         className="text-[#007acc] text-3xl w-8 h-8"
@@ -52,19 +58,12 @@ export const ProjectCard = ({ id, icons, description, project, url }) => {
     >
       <div className="relative w-full md:h-full h-max md:w-1/2 ">
         <a target="_blank" href={url} className="relative group">
-          {id % 2 === 0 ? (
-            <img
-              className="object-cover w-full h-full cursor-pointer hover:ring ring-gray-600"
-              src="https://img.freepik.com/premium-photo/gym-dumbbells-yellow-background_103577-5472.jpg"
-              alt="gym bro"
-            />
-          ) : (
-            <img
-              className="object-cover w-full h-full cursor-pointer hover:ring ring-gray-600"
-              src="https://img.freepik.com/premium-photo/gym-dumbbells-yellow-background_103577-5472.jpg"
-              alt="gym bro"
-            />
-          )}
+          <img
+            className="object-cover w-full h-full cursor-pointer  ring-gray-600"
+            src={imgurl}
+            alt="img"
+          />
+
           <div className="w-5 group-hover:h-full transition-all duration-300 h-0 bg-primary absolute bottom-0 left-0 z-10 "></div>
         </a>
       </div>
@@ -104,21 +103,11 @@ export const ProjectCard = ({ id, icons, description, project, url }) => {
             if (iconsOBj.hasOwnProperty(icon))
               return <Fragment key={i}>{iconsOBj[icon]}</Fragment>;
           })}
-
-          {/* <object
-            className="text-[#007acc] text-3xl w-8 h-8"
-            data="./jwt.svg"
-          ></object> */}
         </div>
         <div className="flex items-center justify-center h-max">
-          <a target="_blank" href="https://gymbroo.netlify.app/">
+          <a target="_blank" href={url}>
             <button className="px-3 py-2 bg-primary hover:bg-[#30a116] text-gray-900 text-sm font-bold rounded-sm">
               View Project
-            </button>
-          </a>
-          <a target="_blank" href="https://github.com/custom1415/Workout-mern">
-            <button className="h-full px-3 py-2 ml-3 text-sm font-bold text-gray-900 bg-white rounded-sm hover:bg-black hover:text-white">
-              <SiGithub className="text-lg scale-125 " />
             </button>
           </a>
         </div>
