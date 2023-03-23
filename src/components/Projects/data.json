@@ -22,5 +22,13 @@
     "icons": ["nextjs", "sanity", "tailwind"],
     "url": "https://sanity-v3-blog-tau.vercel.app/",
     "img": "/sanity-blog.png"
+  },
+  {
+    "project": "Teen-Patti",
+    "description": "A fun Indian 3 card game . ",
+    "image": "/card.png",
+    "icons": ["nextjs", "zustand", "tailwind"],
+    "url": "https://teen-patti-app.vercel.app/",
+    "img": "/card.png"
   }
 ]

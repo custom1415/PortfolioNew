@@ -42,6 +42,12 @@ export const ProjectCard = ({
         className="w-8 h-8"
       />
     ),
+    zustand: (
+      <img
+        src="https://repository-images.githubusercontent.com/180328715/fca49300-e7f1-11ea-9f51-cfd949b31560 "
+        className="w-18 h-8"
+      />
+    ),
     jwt: (
       <object
         className="text-[#007acc] text-3xl w-8 h-8"
