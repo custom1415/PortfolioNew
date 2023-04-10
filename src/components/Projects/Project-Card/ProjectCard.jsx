@@ -45,7 +45,7 @@ export const ProjectCard = ({
     zustand: (
       <img
         src="https://repository-images.githubusercontent.com/180328715/fca49300-e7f1-11ea-9f51-cfd949b31560 "
-        className="w-18 h-8"
+        className="w-max h-8"
       />
     ),
     jwt: (
@@ -53,6 +53,12 @@ export const ProjectCard = ({
         className="text-[#007acc] text-3xl w-8 h-8"
         data="./jwt.svg"
       ></object>
+    ),
+    "passport.js": (
+      <img
+        src="https://assets.stickpng.com/images/58481767cef1014c0b5e4991.png "
+           className="w-6 scale-90 ml-2 h-max"
+      />
     ),
   };
   const handleMouseOver = (id) => {

@@ -1,11 +1,11 @@
 [
   {
-    "project": "GymBro",
-    "description": "A workout website that helps you create and organize your workouts and save them into your local storage using redux-persist. ",
-    "image": "/gymbro.png",
-    "icons": ["react", "redux", "tailwind"],
-    "url": "https://gymbroo.netlify.app/",
-    "img": "https://img.freepik.com/premium-photo/gym-dumbbells-yellow-background_103577-5472.jpg"
+    "project": "Chorbazar",
+    "description": "A mern stack ecommerce website with authentication.",
+    "image": "",
+    "icons": ["react", "zustand", "tailwind", "passport.js"],
+    "url": "https://chorbazar.netlify.app/",
+    "img": "/chorbazar.png"
   },
   {
     "project": "Drag-n'-Drop",
@@ -30,5 +30,13 @@
     "icons": ["nextjs", "zustand", "tailwind"],
     "url": "https://teen-patti-app.vercel.app/",
     "img": "/card.png"
+  },
+  {
+    "project": "GymBro",
+    "description": "A workout website that helps you create and organize your workouts and save them into your local storage using redux-persist. ",
+    "image": "/gymbro.png",
+    "icons": ["react", "redux", "tailwind"],
+    "url": "https://gymbroo.netlify.app/",
+    "img": "https://img.freepik.com/premium-photo/gym-dumbbells-yellow-background_103577-5472.jpg"
   }
 ]
